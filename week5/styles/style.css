@@ -21,9 +21,13 @@ h1{
 
 .more{
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
 }
 
+.onetwo{
+    display: flex;
+    justify-content: space-between;
+}
 .aside{
     display: flex;
     justify-content: center;
