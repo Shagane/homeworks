@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Верстка с flexbox</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
     <header>
@@ -13,13 +14,15 @@
     <main class="flexcontainer">
         <div class="mainpart">
             <div class="article">
-                <p><h2 class="titel">Основная часть</h2></p>
+                <h2>Основная часть</h2>
                 <div class="more">
                     <div class="onetwo">
-                        <p>Еще 1</p>
-                        <p>Еще 2</p>
+                        <div class="block1">Еще 1</div>
+                        <div class="block2">Еще 2</div>
                     </div>
-                    <p id="number3">Еще 3</p>
+                    <div class="block3">
+                        <div class="block3">Еще 3</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -27,10 +30,10 @@
     </main>
     <footer>
         <div class="foot-container">
-            <p>Секция футера 1</p>
-            <p>Секция футера 2</p>
-            <p>Секция футера 3</p>
-            <p>Секция футера 4</p>
+            <p class="foot1">Секция футера 1</p>
+            <p class="foot2">Секция футера 2</p>
+            <p class="foot3">Секция футера 3</p>
+            <p class="foot4">Секция футера 4</p>
         </div>
     </footer>
 </body>
