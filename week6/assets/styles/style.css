@@ -1,9 +1,8 @@
 .container{
     display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    background-color: rgb(233, 229, 229);
+    width: 100wh;
+    height: 100%;
+    background-color: rgb(216, 212, 212);
 }
 
 header{
@@ -17,43 +16,55 @@ header{
 .mid_box{
     display: grid;
     width: 100%;
-    height: 70vh;
+    height: 400px;
     grid-template-columns: 60% 40%;
-    justify-content: space-around;
     border: 1px solid green;
 }
 
 .main_part{
     display: grid;
-    width: 100%;
+    width: 80wh;
+    grid-template-areas: "main_titel main_titel"
+                        "content-1 content-2"
+                        "content-3 content-3";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    justify-items: center;
     background-color: rgb(240, 209, 214);
-    align-content: space-between;
 }
 
 .main_titel{
-    display: grid;
+    grid-area: main_titel;
     font-weight: bold;
-    justify-content: center;
+    padding-top: 20px;
 }
 
-.content{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
+.content-1{
+    grid-area: content-1;
+}
+
+.content-2{
+    grid-area: content-2;
+}
+
+.content-3{
+    grid-area: content-3;
 }
 
 .sidebar{
     display: grid;
     justify-content: center;
     font-weight: bold;
+    padding-top: 20px;
+    width: 20wh;
     background-color: rgb(193, 253, 193);
 }
 
-.footer{
+footer{
     display: grid;
-    grid-template-columns: repeat(4, 20%);
-    width: 100%;
+    grid-template-columns: repeat(4, 25%);
     justify-content: space-evenly;
-    align-content: center;
-    border: 1px solid black;
+    align-items: center;
+    width: 100wh;
+    height: 70px;
 }
