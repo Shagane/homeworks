@@ -1,5 +1,123 @@
-.back_pic{
-    background-image: url(/assets/images/back_pic.png);
+@font-face{
+    font-family: "NEXT ART";
+    src:
+    local("NEXT ART"),
+    url("/assets/styles/font/NEXT\ ART_Regular.otf") format("opentype");
 }
 
-.
+.back_pic{
+    display: grid;
+    justify-content: center;
+    align-content: space-between;
+    background-image: url(/assets/images/back_pic.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+header{
+    display: grid;
+    grid-template-areas: "logo menu";
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    width: 1180px;
+    margin-top: 10px;
+}
+
+.logo{
+    grid-area: "logo";
+}
+
+.menu{
+    display: grid;
+    grid-area: "menu";
+    grid-template-columns: repeat(7,auto);
+    justify-content: space-between;
+    align-items: center;
+    width: 831px;
+    font-size: 20px;
+}
+
+button{
+    width: 157px;
+    height: 44px;
+    font-size: 17px;
+    border-radius: 4px;
+    border: 0;
+    background-color: #1A3E3E;
+    margin: 22px, 44px, 22px, 44px;
+    color: white;
+}
+
+.big_title{
+    font-family: "NEXT ART";
+    font-weight: 700;
+    font-size: 50px;
+    width: 1180px;
+    margin-bottom: 50px;
+}
+
+.search{
+    display: grid;
+    width: 1180px;
+    height: 161px;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 20%;
+    justify-content: space-around;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.info_board{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    width: 1095px;
+    height: 81px;
+    align-items: center;
+    font-family: "NEXT ART";
+    font-weight: 500;
+    color: white;
+}
+
+.but_data{
+    width: 157px;
+    height: 44px;
+    font-size: 10px;
+    border-radius: 4px;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    margin: 22px, 44px, 22px, 44px;
+    color: rgb(14, 13, 13);
+}
+
+.location{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    width: 270px;
+    height: 81px;
+}
+
+.date{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    width: 270px;
+    height: 81px;
+}
+
+.member{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    width: 270px;
+    height: 81px;
+}
+
+
